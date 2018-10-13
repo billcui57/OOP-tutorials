@@ -6,7 +6,7 @@
 package Bank;
 
 /**
- *
+ * Interface for all types of accounts
  * @author 348848128
  */
 public interface Account {

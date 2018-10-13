@@ -27,6 +27,7 @@ public class becker {
       Thing t2 = new Thing(Waterloo, 2, 3);
       Thing t3 = new Thing(Waterloo, 3, 4);
       
+      //Finds ball and picks them up and places it within walls
       bob.setColor(Color.blue);
       bob.setLabel("Bob");
       bob.move();
@@ -52,13 +53,21 @@ public class becker {
         bob.putThing();
     }
     
-    
+    /**
+     * created turn right method
+     * @param b robot
+     */
     public static void turnRight(Robot b){
         b.turnLeft();
         b.turnLeft();
         b.turnLeft();
     }
     
+    /**
+     * Custom method allowing for multiple moves
+     * @param b robot
+     * @param n number of moves
+     */
     public static void moveMulti(Robot b, int n){
         for(int i=0;i<n;i++){
             b.move();
